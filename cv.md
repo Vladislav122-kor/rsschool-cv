@@ -17,3 +17,42 @@ After graduation from the university I got a job as an Assistant of a small comp
 * purposefulness;
 * desire to learn and develop;
 * memorizing a large flow of information.
+
+### **Skills**
+___
+**I have basic skills of**:
+* HTML;
+* CSS;
+* JS.
+
+**Example of code**:
+```
+module.exports = function towelSort (matrix) {
+    if (matrix) {
+
+        let arr = [];
+    
+        for (let i = 0; i < matrix.length; i++) {
+          if (i % 2 === 0) {
+            for (let y = 0; y < matrix[i].length; y ++) {
+              arr.push(matrix[i][y]);
+            }
+          } else {
+            for (let y = matrix[i].length - 1; y >= 0; y--) {
+              arr.push(matrix[i][y]);
+            }
+          }
+        }
+    
+        return arr;
+    } else {
+        return [];
+    }
+}
+```
+
+**List of works performed**:
+* [Portfolio](https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/portfolio/)
+* [EcoSounds](https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30/#1/)
+* [ImageGalery](https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30-part2/)
+* [TicTacToe](https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30-part3/)
