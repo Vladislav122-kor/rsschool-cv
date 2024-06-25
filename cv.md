@@ -56,3 +56,12 @@ module.exports = function towelSort (matrix) {
 * [EcoSounds](https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30/#1/)
 * [ImageGalery](https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30-part2/)
 * [TicTacToe](https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30-part3/)
+
+### **Education**
+___
+* 2016 Linguistic college;
+* 2020 International university MITSO.
+
+### **English**
+___
+B2
