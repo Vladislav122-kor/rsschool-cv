@@ -1,353 +1,253 @@
 * {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
+    
+body {
+  margin: 0 auto;
+  max-width: 1100px;
+  background-color: rgb(200, 195, 195);
+}
   
-  body {
-    margin: 0 auto;
-    max-width: 1100px;
-    background-color: rgb(200, 195, 195);
-  }
+.font_serif {
+  font-family: "noto serif", serif;
+  font-weight: normal;
+  color: white;
+}
   
-  .font_serif {
-    font-family: "noto serif", serif;
-    font-weight: normal;
-    color: white;
-  }
+.font_serif_dark {
+  font-family: "noto serif", serif;
+  font-weight: normal;
+  color: rgb(59, 58, 58);
+}
   
-  .font_serif_dark {
-    font-family: "noto serif", serif;
-    font-weight: normal;
-    color: rgb(59, 58, 58);
-  }
+.font_serif_dark_h2 {
+  font-family: "noto serif", serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgb(59, 58, 58);
+}
   
-  .font_serif_dark_h2 {
-    font-family: "noto serif", serif;
-    font-weight: normal;
-    font-size: 30px;
-    color: rgb(59, 58, 58);
-  }
+.font_serif_dark_p {
+  font-family: "noto serif", serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgb(59, 58, 58);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(200, 195, 195);
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_section {
+  list-style-type: none;
+  color: white;
+}
+
+.menu_font {
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 45px;
+  padding: 0 5px;
+  border-radius: 5%;
+}
+
+.menu_font:hover {
+  background-color: rgb(88, 88, 88);
+}
+
+main {
+  display: flex;
+}
   
-  .font_serif_dark_p {
-    font-family: "noto serif", serif;
-    font-weight: normal;
-    font-size: 20px;
-    color: rgb(59, 58, 58);
-  }
+aside {
+  padding: 30px;
+  background-color: rgb(59, 58, 58);
+}
+
+.container_aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: sticky;
+  top: 80px;
+}
   
-  aside {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    height: 2035px;
-    padding: 60px 40px 20px 40px;
-    background-color: rgb(59, 58, 58);
-    border: 1px solid red;
-  }
+.photo {
+  border-radius: 50%;
+}
+
+.contacts_aside {
+  padding: 0;
+}
   
-  main {
-    display: flex;
-    flex-direction: column;
-    padding: 60px 50px 20px 380px;
-    background-color: white;
-    border: 1px solid red;
-  }
+.contact_aside {
+  font-size: 12px;
+  font-family: "noto serif", serif;
+  list-style-type: none;
+  color: white;
+}
+
+.content {
+  padding: 30px;
+  background-color: white;
+}
   
-  .img_photo {
-    align-self: center;
-    margin-bottom: 18px;
-    border-radius: 50%;
-  }
+h1 {
+  margin: 0;
+  font-size: 74.5px;
+}
+
+h2 {
+  position: relative;
+}
   
-  li.start {
-    font-size: 12.4px;
-    margin-left: -40px;
-    font-family: "noto serif", serif;
-    list-style-type: none;
-    color: white;
-  }
+h2:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(59, 58, 58);
+}
   
-  a.start {
-    color: white;
-  }
+h3.developer {
+  margin-top: 0;
+  font-size: 35px;
+}
   
-  .nav_h2 {
-    position: relative;
-    font-size: 35px;
-    color: white;
-  }
+p.about_myself {
+  text-align: justify;
+}
   
-  .nav_h2:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: white;
-  }
+pre {
+  height: 300px;
+  background-color: rgb(197, 197, 197, 0.5);
+  overflow: scroll;
+}
+
+ul.works li a {
+  font-family: "noto serif", serif;
+  text-decoration: none;
+  color: rgb(59, 58, 58);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+ul.works li a:hover {
+  text-decoration: underline;
+}
   
-  .nav_li {
-    margin-left: -23.5px;
-    color: white;
-  }
+address {
+  font-style: normal;
+}
   
-  .nav_a {
-    text-decoration: none;
-    font-size: 25px;
-    line-height: 45px;
-    padding: 0 5px;
-    border-radius: 5%;
-  }
+figure,
+figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
   
-  .nav_a:hover {
-    background-color: rgb(88, 88, 88);
-  }
+figcaption {
+  gap: 10px;
+}
   
-  h1 {
-    margin: 0;
-    font-size: 74.5px;
-  }
+a.rsschool,
+a.git {
+  font-size: 21px;
+  color: black;
+}
   
-  h2.developer {
-    margin-top: 0;
-    font-size: 35px;
-  }
+p.year {
+  margin: 0;
+  font-size: 20px;
+}
   
-  h2.about_myself {
-    position: relative;
-  }
+span.blue {
+  color: rgb(0, 153, 167);
+}
   
-  h2.about_myself:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: rgb(59, 58, 58);
-  }
+span.red {
+  color: rgb(255, 0, 34);
+}
   
-  p.about_myself {
-    text-align: justify;
-  }
+span.purple {
+  color: rgb(183, 0, 255);
+}
   
-  h2.skills {
-    position: relative;
-  }
+span.yellow {
+  color: rgb(255, 200, 50);
+}
   
-  h2.skills:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: rgb(59, 58, 58);
-  }
+span.grey {
+  color: rgb(59, 122, 117);
+}
   
+span.orange {
+  color: rgb(255, 115, 0);
+}
+  
+span.green {
+  color: rgb(165, 211, 14);
+}
+  
+@media (max-width: 1099px) {
   pre {
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    background-color: rgb(197, 197, 197, 0.5);
-    overflow: scroll;
+    width: 500px;
+  }
+}
+
+@media (max-width: 870px) {
+  pre {
+    width: 400px;
+  }
+}
+
+@media (max-width: 770px) {
+  main {
+    display: block;
+  }
+
+  .container_aside {
+    position: none;
+  }
+
+  pre {
+    width: 100%;
+  }
+}
+  
+@media (max-width: 600px) {
+  .font_serif_dark_h2 {
+    font-size: 25px;
+  }
+    
+  .font_serif_dark_p {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 35px;
   }
   
-  ul.works li a{
-    font-family: "noto serif", serif;
-    text-decoration: none;
-    color: rgb(59, 58, 58);
-    font-size: 18px;
-    line-height: 30px;
+  h3.developer,
+  span,
+  .menu_font,
+  ul.works li a {
+    font-size: 13px;
   }
-  
-  ul.works li a:hover {
-    text-decoration: underline;
-  }
-  
-  h2.education {
-    position: relative;
-  }
-  
-  h2.education:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: rgb(59, 58, 58);
-  }
-  
-  h2.english {
-    position: relative;
-  }
-  
-  h2.english:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: rgb(59, 58, 58);
-  }
-  
-  footer {
-    background-color: white;
-  }
-  
-  address {
-    font-style: normal;
-  }
-  
-  figure {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-top: 150px;
-    margin-bottom: 0;
-  }
-  
-  img.rsschool {
-    align-self: center;
-  }
-  
-  figcaption {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  a.rsschool {
-    margin-top: 8px;
-    align-self: center;
-    font-size: 21px;
-    color: black;
-  }
-  
-  a.git {
-    margin-top: 8px;
-    align-self: center;
-    font-size: 21px;
-    color: black;
-  }
-  
-  p.year {
-    margin-top: 20px;
-    margin-bottom: 0;
-    align-self: center;
-    font-size: 20px;
-  }
-  
-  span.blue {
-    color: rgb(0, 153, 167);
-  }
-  
-  span.red {
-    color: rgb(255, 0, 34);
-  }
-  
-  span.purple {
-    color: rgb(183, 0, 255);
-  }
-  
-  span.yellow {
-    color: rgb(255, 200, 50);
-  }
-  
-  span.grey {
-    color: rgb(59, 122, 117);
-  }
-  
-  span.orange {
-    color: rgb(255, 115, 0);
-  }
-  
-  span.green {
-    color: rgb(165, 211, 14);
-  }
-  
-  @media (max-width: 1050px) {
-    pre {
-      width: 380px;
-    }
-  }
-  
-  @media (max-width: 820px) {
-    main {
-      padding: 60px 50px 20px 250px;
-    }
-  
-    .img_photo {
-      width: 150px;
-    }
-  
-    .nav_h2 {
-      font-size: 25px;
-    }
-  
-    .nav_a {
-      font-size: 15px;
-      line-height: 30px;
-    }
-  
-    .contacts_start {
-      display: none;
-    }
-  }
-  
-  @media (max-height: 700px) {
-    .nav_h2 {
-      font-size: 25px;
-    }
-  
-    .nav_a {
-      font-size: 15px;
-      line-height: 25px;
-    }
-  }
-  
-  @media (max-width: 660px) {
-    .name {
-      font-size: 50px;
-    }
-  
-    pre {
-      width: 200px;
-    }
-  
-    .contacts_ul {
-      font-size: 10px;
-    }
-  
-    .contacts_a {
-      font-size: 10px;
-    }
-  }
-  
-  @media (max-width: 510px) {
-    aside {
-      padding: 60px 10px 20px 10px;
-    }
-  
-    main {
-      padding: 60px 50px 20px 200px;
-    }
-  
-    .font_serif_dark_h2 {
-      font-size: 23px;
-    }
-  
-    .font_serif_dark_p {
-      font-size: 13px;
-    }
-  
-    .contacts_ul {
-      font-size: 7px;
-    }
-  
-    .contacts_a {
-      font-size: 7px;
-    }
-  }
+}
   
