@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li class="menu_section"><a href="#about_myself" class="menu_font font_serif">About myself</a></li>
+        <li class="menu_section"><a href="#skills" class="menu_font font_serif">Skills</a></li>
+        <li class="menu_section"><a href="#education" class="menu_font font_serif">Education</a></li>
+        <li class="menu_section"><a href="#english" class="menu_font font_serif">English</a></li>
+        <li class="menu_section"><a href="#contacts" class="menu_font font_serif">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside>
+      <div class="container_aside">
+        <img class="photo" src="./632343360.jpeg" width="250" alt="photo">
+        <ul class="contacts_aside">
+          <li class="contact_aside">Phone: <i>+375 29 635 28 43</i></li>
+          <li class="contact_aside">E-mail: <i>vladislav.korolyov1996@gmail.com</i></li>
+          <li class="contact_aside">Discord: <i>Vlad (@Vladislav122-kor)</i></li>
+        </ul>
+      </div>
+    </aside>
+    <div class="content">
+      <div class="title">
+        <h1 class="name font_serif_dark">Korolyov Vladislav</h1>
+        <h3 class="developer font_serif_dark_h2">Frontend developer</h3>
+      </div>
+      <section id="about_myself">
+        <h2 class="about_myself font_serif_dark_h2"><b>About myself</b></h2>
+        <p class="about_myself font_serif_dark_p">After graduation from the university I got a job as an Assistant of a small company. Now I have been working here for 2 years. But I realised that this job and in general this spheare is not the thing I’d like to do. I become interested in IT-sphere and started with learning of Java Script on YouTube. It was a little bit difficult and I decided to take a course.</p>
+        <p class="about_myself font_serif_dark_p"><b>My personal goal</b> is to become a <i>full-fledged frontend developer</i>.</p>
+        <p class="about_myself font_serif_dark_p"><b>My strengths</b>:</p>
+        <ul class="about_myself font_serif_dark_p">
+          <li class="about_myself">perseverance;</li>
+          <li class="about_myself">purposefulness;</li>
+          <li class="about_myself">desire to learn and develop;</li>
+          <li class="about_myself">memorizing a large flow of information.</li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2 class="skills font_serif_dark_h2"><b>Skills</b></h2>
+        <p class="skills font_serif_dark_p">I have basic skills of:</p>
+        <ul class="skills font_serif_dark_p">
+          <li class="skills">HTML;</li>
+          <li class="skills">CSS;</li>
+          <li class="skills">JS.</li>
+        </ul>
+        <p class="skills font_serif_dark_p"><b>Example of code</b>:</p>
+        <pre>
+          <code>
+            <span class="blue">&lt;!</span><span class="red">DOCTYPE</span> <span class="purple"><i>html</i></span><span class="blue">&gt;</span>
+            <span class="blue">&lt;</span><span class="red">html</span><span class="blue">&gt;</span>
+            <span class="blue">&lt;</span><span class="red">head</span><span class="blue">&gt;</span>
+              <span class="blue">&lt;</span><span class="red">style</span><span class="blue">&gt;</span>
+                <span class="red">table</span> <span class="yellow">{</span>
+                  <span class="grey">border-collapse:</span> <span class="orange">collapse</span><span class="grey">;</span>
+                <span class="yellow">}</span>
+
+                <span class="red">td</span><span class="grey">,</span>
+                <span class="red">th</span> <span class="yellow">{</span>
+                  <span class="grey">border:</span> <span class="orange">1px solid black</span><span class="grey">;</span>
+                  <span class="grey">padding:</span> <span class="orange">3px</span><span class="grey">;</span>
+                  <span class="grey">text-align:</span> <span class="orange">center</span><span class="grey">;</span>
+                <span class="yellow">}</span>
+
+                <span class="red">th</span> <span class="yellow">{</span>
+                  <span class="grey">font-weight:</span> <span class="orange">bold</span><span class="grey">;</span>
+                  <span class="grey">background-color:</span> <span class="orange">#E6E6E6</span><span class="grey">;</span>
+                <span class="yellow">}</span>
+              <span class="blue">&lt;/</span><span class="red">style</span><span class="blue">&gt;</span>
+              <span class="blue">&lt;/</span><span class="red">head</span><span class="blue">&gt;</span>
+              <span class="blue">&lt;</span><span class="red">body</span><span class="blue">&gt;</span>
+              <span class="blue">&lt;</span><span class="red">div</span> <span class="purple"><i>id</i></span><span class="blue">=&quot;</span><span class="green">calendar</span><span class="blue">&quot;&gt;&lt;/</span><span class="red">div</span><span class="blue">&gt;</span>
+              <span class="blue">&lt;</span><span class="red">script</span><span class="blue">&gt;</span>
+                <span class="purple">function</span> createCalendar(elem, year, month) {
+                  <span class="purple">let</span> count = 0;
+                  <span class="purple">let</span> date = new Date(year, month-1)
+                  <span class="purple">let</span> d = date.getDate();
+                  <span class="purple">let</span> dateDay = date.getDay() - 1;
+
+                  <span class="blue">if</span> (dateDay &lt; 0) {
+                    dateDay = 6;
+                  }
+
+                  <span class="purple">const</span> days = [&quot;пн&quot;, &quot;вт&quot;, &quot;ср&quot;, &quot;чт&quot;, &quot;пт&quot;, &quot;сб&quot;, &quot;вс&quot;];
+
+                  <span class="purple">let</span> table = document.createElement(&quot;table&quot;);
+                  calendar.append(table);
+
+                  <span class="blue">for</span> (<span class="purple">let</span> i = 0; i &lt; days.length; i++) {
+                    <span class="purple">let</span> th = document.createElement(&quot;th&quot;);
+                    th.innerHTML = days[i];
+                    table.append(th);
+                  }
+
+                  <span class="blue">for</span> (<span class="purple">let</span> i = 0; i &lt; 5; i++) {
+                    <span class="purple">var</span> tr = document.createElement(&quot;tr&quot;);
+                    table.append(tr);
+                    <span class="blue">for</span> (<span class="purple">let</span> y = 0; y &lt; days.length; y++) {
+                      <span class="purple">var</span> td = document.createElement(&quot;td&quot;);
+                      <span class="blue">if</span> (count &lt; dateDay) {
+                        td.innerHTML = &quot;&quot;;
+                        tr.append(td);
+                        count += 1;
+                      }
+                      <span class="blue">else if</span> (count &gt;= dateDay &amp;&amp; (date.getMonth() + 1) === month) {
+                        td.innerHTML = d;
+                        tr.append(td);
+                        d += 1;
+                        date.setDate((date.getDate() + 1));
+                      } <span class="blue">else</span> {
+                        td.innerHTML = &quot;&quot;;
+                        tr.append(td);
+                      }
+                    }
+                  }
+                  document.write(days[dateDay]);
+                }
+                createCalendar(calendar, 2021, 5);
+                <span class="blue">&lt;/</span><span class="red">script</span><span class="blue">&gt;</span>
+              <span class="blue">&lt;/</span><span class="red">body</span><span class="blue">&gt;</span>
+            <span class="blue">&lt;/</span><span class="red">html</span><span class="blue">&gt;</span>
+          </code>
+        </pre>
+        <p class="skills font_serif_dark_p"><b>List of works performed:</b></p>
+        <ul class="works">
+          <li><a href="https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/portfolio/">Portfolio</a></li>
+          <li><a href="https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30/#1/">EcoSounds</a></li>
+          <li><a href="https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30-part2/">ImageGalery</a></li>
+          <li><a href="https://rolling-scopes-school.github.io/vladislav122-kor-JSFEPRESCHOOL/js30-part3/">TicTacToe</a></li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2 class="education font_serif_dark_h2"><b>Education</b></h2>
+        <ul class="education font_serif_dark_p">
+          <li>2016 Linguistic college;</li>
+          <li>2020 International university MITSO.</li>
+        </ul>
+      </section>
+      <section id="english">
+        <h2 class="english font_serif_dark_h2"><b>English</b></h2>
+        <p class="english font_serif_dark_p">B2</p>
+      </section>
+      <section id="contacts">
+        <h2 class="contacts_h2 font_serif_dark_h2"><b>Contacts</b></h2>
+        <address>
+          <ul class="contacts_ul font_serif_dark_p">
+            <li>Phone: <i>+375 29 635 28 43</i></li>
+            <li>E-mail: <i>vladislav.korolyov1996@gmail.com</i></li>
+            <li>Discord: <i>Vlad (@Vladislav122-kor)</i></li>
+          </ul>
+        </address>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <figure>
+      <img class="rsschool" src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/34c6c5cbc96ec26fcfdb022d1a6f3b2641f0110c/tasks/cv/rs-school-logo.svg" width="150" alt="RSSCHOOL logo">
+      <figcaption>
+        <a class="rsschool" href="https://rs.school/courses/javascript-ru">RSSCHOOL link</a>
+        <a href="https://github.com/Vladislav122-kor" class="git">My GitHub</a>
+        <p class="year">2024</p>
+      </figcaption>
+    </figure>
+  </footer>
+</body>
+</html>
