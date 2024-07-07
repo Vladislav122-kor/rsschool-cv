@@ -68,14 +68,14 @@
                 <span class="red">table</span> <span class="yellow">{</span>
                   <span class="grey">border-collapse:</span> <span class="orange">collapse</span><span class="grey">;</span>
                 <span class="yellow">}</span>
-          
+
                 <span class="red">td</span><span class="grey">,</span>
                 <span class="red">th</span> <span class="yellow">{</span>
                   <span class="grey">border:</span> <span class="orange">1px solid black</span><span class="grey">;</span>
                   <span class="grey">padding:</span> <span class="orange">3px</span><span class="grey">;</span>
                   <span class="grey">text-align:</span> <span class="orange">center</span><span class="grey">;</span>
                 <span class="yellow">}</span>
-          
+
                 <span class="red">th</span> <span class="yellow">{</span>
                   <span class="grey">font-weight:</span> <span class="orange">bold</span><span class="grey">;</span>
                   <span class="grey">background-color:</span> <span class="orange">#E6E6E6</span><span class="grey">;</span>
@@ -90,22 +90,22 @@
                   <span class="purple">let</span> date = new Date(year, month-1)
                   <span class="purple">let</span> d = date.getDate();
                   <span class="purple">let</span> dateDay = date.getDay() - 1;
-          
+
                   <span class="blue">if</span> (dateDay &lt; 0) {
                     dateDay = 6;
                   }
-          
+
                   <span class="purple">const</span> days = [&quot;пн&quot;, &quot;вт&quot;, &quot;ср&quot;, &quot;чт&quot;, &quot;пт&quot;, &quot;сб&quot;, &quot;вс&quot;];
-          
+
                   <span class="purple">let</span> table = document.createElement(&quot;table&quot;);
                   calendar.append(table);
-          
+
                   <span class="blue">for</span> (<span class="purple">let</span> i = 0; i &lt; days.length; i++) {
                     <span class="purple">let</span> th = document.createElement(&quot;th&quot;);
                     th.innerHTML = days[i];
                     table.append(th);
                   }
-          
+
                   <span class="blue">for</span> (<span class="purple">let</span> i = 0; i &lt; 5; i++) {
                     <span class="purple">var</span> tr = document.createElement(&quot;tr&quot;);
                     table.append(tr);
